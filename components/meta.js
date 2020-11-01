@@ -34,7 +34,7 @@ export default function Meta() {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`Anitha's cooking blog built with Next.js, ${CMS_NAME}, and 💖`}
+        content={`Anitha Jadapalli's cooking blog built with Next.js, ${CMS_NAME}, and 💖`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>

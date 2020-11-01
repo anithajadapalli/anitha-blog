@@ -1,7 +1,5 @@
 import Container from './container'
 import cn from 'classnames'
-import { EXAMPLE_PATH } from '../lib/constants'
-import { CMS_NAME, CMS_URL } from '../lib/constants'
 
 export default function Alert({ preview }) {
   return (
@@ -12,24 +10,7 @@ export default function Alert({ preview }) {
       })}
     >
       <Container>
-        <h4 className="text-center text-lg md:py-2">
-          A statically generated blog built with {' '}
-          <a
-            href="https://nextjs.org/"
-            className="underline hover:text-success duration-200 transition-colors"
-          >
-            Next.js
-          </a>
-          ,{' '}
-          <a
-            href={CMS_URL}
-            className="underline hover:text-success duration-200 transition-colors"
-          >
-            {CMS_NAME}
-          </a>,{' '}
-          and{' '}💖
-        </h4>
-        <div className="py-2 text-center text-sm">
+        <div className="mb-5 py-2 text-center text-sm">
           {preview ? (
             <>
               This is page is a preview.{' '}
@@ -43,14 +24,7 @@ export default function Alert({ preview }) {
             </>
           ) : (
             <>
-              The source code for this blog is{' '}
-              <a
-                href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-                className="underline hover:text-success duration-200 transition-colors"
-              >
-                available on GitHub
-              </a>
-              .
+              Copyright &copy; {(new Date()).getFullYear()}.
             </>
           )}
         </div>
